@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="invadem.AppTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-26T02:29:11" hostname="DESKTOP-8TCN1PG" time="0.006">
+  <properties/>
+  <testcase name="testApp" classname="invadem.AppTest" time="0.001"/>
+  <testcase name="testCheckCollection" classname="invadem.AppTest" time="0.0"/>
+  <testcase name="testAppSettings" classname="invadem.AppTest" time="0.004"/>
+  <system-out><![CDATA[Error: java.lang.IllegalStateException: size() cannot be used here, see https://processing.org/reference/size_.html
+]]></system-out>
+  <system-err><![CDATA[When not using the PDE, size() can only be used inside settings().
+Remove the size() method from setup(), and add the following:
+public void settings() {
+  size(640, 480);
+}
+]]></system-err>
+</testsuite>
